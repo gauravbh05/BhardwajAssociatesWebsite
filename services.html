@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="services_page_title">Bhardwaj Associates - Our Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .svc-text-list { list-style: none; padding: 0; margin: 0; }
+    .svc-text-item { padding: 36px 0; border-bottom: 1px solid var(--border); }
+    .svc-text-item:last-child { border-bottom: none; }
+    .svc-text-heading {
+      display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;
+      margin-bottom: 16px; line-height: 1.7;
+    }
+    .svc-num { font-family: 'Playfair Display',serif; font-size: 1.15rem; font-weight: 700; color: var(--accent-1); flex-shrink: 0; }
+    .svc-title-bold { font-family: 'Playfair Display',serif; font-size: 1.15rem; font-weight: 700; color: var(--text-primary); }
+    .svc-dash { color: var(--text-secondary); }
+    .svc-desc-inline { color: var(--text-secondary); font-size: 1rem; }
+    .svc-sub { list-style: none; padding-left: 28px; margin: 0; display: flex; flex-direction: column; gap: 7px; }
+    .svc-sub li { font-size: .97rem; color: var(--text-primary); display: flex; align-items: baseline; gap: 10px; }
+    .svc-sub li::before { content: '\21D2'; color: var(--accent-1); font-size: .95rem; flex-shrink: 0; }
+    @media (max-width: 768px) {
+      .svc-text-item  { padding: 24px 0; }
+      .svc-num, .svc-title-bold { font-size: 1rem; }
+      .svc-desc-inline { font-size: .93rem; }
+      .svc-sub        { padding-left: 16px; }
+      .svc-sub li     { font-size: .9rem; }
+    }
+    @media (max-width: 480px) {
+      .svc-text-heading { gap: 6px; }
+      .svc-sub        { padding-left: 10px; }
+    }
+  </style>
+  <!-- Security headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <meta name="robots" content="index, follow" />
+</head>
+<body id="top">
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Bhardwaj Associates Logo" class="logo-img" />
+        <span class="logo-text">Bhardwaj<span class="logo-sub">Associates.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+        <li class="nav-dropdown">
+          <a href="services.html" class="dropdown-toggle active"><span data-i18n="nav_services">Services</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html" data-i18n="dd_sale_deed">Sale Deed (Registry)</a></li>
+            <li><a href="services.html" data-i18n="dd_gpa">Power of Attorney (GPA)</a></li>
+            <li><a href="services.html" data-i18n="dd_wills">Wills (Wasiyatnama)</a></li>
+            <li><a href="services.html" data-i18n="dd_rent">Rent Agreement</a></li>
+            <li><a href="services.html" data-i18n="dd_court_marriage">Court Marriage</a></li>
+            <li><a href="services.html" data-i18n="dd_agree_sale">Agreement of Sale</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="hi">हिंदी</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en">English</button>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon theme-icon-dark"><i class="fas fa-moon"></i></span>
+          <span class="theme-icon theme-icon-light"><i class="fas fa-sun"></i></span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Our Services -->
+  <section class="section" id="services" style="background: var(--bg-dark);">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:48px;">
+        <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--text-primary);display:inline-block;border-bottom:2px solid var(--accent-1);padding-bottom:6px;letter-spacing:.04em;">
+          <span data-i18n="services_title1">Our</span> <span class="gradient-text" data-i18n="services_title2">Services</span>
+        </h2>
+      </div>
+
+      <ol class="svc-text-list">
+
+        <li class="svc-text-item reveal">
+          <p class="svc-text-heading">
+            <span class="svc-num">1.</span>
+            <span class="svc-title-bold" data-i18n="svc1_title">Property Registration &amp; Legal Documentation</span>
+            <span class="svc-dash"> &ndash; </span>
+            <span class="svc-desc-inline" data-i18n="svc1_desc">legal assistance for drafting, verification, registration, and execution of all property-related documents and agreements.</span>
+          </p>
+          <ul class="svc-sub">
+            <li data-i18n="svc_sale_deed">Sale Deed (Registry)</li>
+            <li data-i18n="svc_gift_deed">Gift Deed</li>
+            <li data-i18n="svc_gpa">General Power of Attorney (GPA)</li>
+            <li data-i18n="svc_wills">Wills (Wasiyatnama)</li>
+            <li data-i18n="svc_stamp">Stamp Duty</li>
+            <li data-i18n="svc_lease_deed">Lease Deed</li>
+            <li data-i18n="svc_cancel_deed">Cancellation Deed</li>
+          </ul>
+        </li>
+
+        <li class="svc-text-item reveal">
+          <p class="svc-text-heading">
+            <span class="svc-num">2.</span>
+            <span class="svc-title-bold" data-i18n="svc2_title">Legal Agreements &amp; Documentation</span>
+            <span class="svc-dash"> &ndash; </span>
+            <span class="svc-desc-inline" data-i18n="svc2_desc">Expert legal assistance in drafting, reviewing, and executing agreements and legal documents to safeguard your rights and interests.</span>
+          </p>
+          <ul class="svc-sub">
+            <li data-i18n="svc_agree_sell">Agreement to Sell (Bayana Agreement)</li>
+            <li data-i18n="svc_rent">Rent Agreement (Leave &amp; License Agreement, if applicable)</li>
+            <li data-i18n="svc_affidavit">Affidavits</li>
+            <li data-i18n="svc_marriage">Marriage Registration (Court Marriage)</li>
+            <li data-i18n="svc_notarize">Notarization &amp; Legal Documentation</li>
+          </ul>
+        </li>
+
+        <li class="svc-text-item reveal">
+          <p class="svc-text-heading">
+            <span class="svc-num">3.</span>
+            <span class="svc-title-bold" data-i18n="svc3_title">Government Certificates &amp; Documentation</span>
+            <span class="svc-dash"> &ndash; </span>
+            <span class="svc-desc-inline" data-i18n="svc3_desc">We provide professional legal assistance for obtaining government certificates, preparing official documentation, and ensuring compliance with applicable legal and regulatory requirements.</span>
+          </p>
+          <ul class="svc-sub">
+            <li data-i18n="svc_income">Income Certificate</li>
+            <li data-i18n="svc_ews">EWS Certificate</li>
+            <li data-i18n="svc_domicile">Domicile Certificate</li>
+            <li data-i18n="svc_heirs">Legal Heir Certificate (Waarisaan)</li>
+            <li data-i18n="svc_other_govt">Other Government Documentation Assistance</li>
+          </ul>
+        </li>
+
+        <li class="svc-text-item reveal">
+          <p class="svc-text-heading">
+            <span class="svc-num">4.</span>
+            <span class="svc-title-bold" data-i18n="svc4_title">Development Authority &amp; Municipal Matters</span>
+            <span class="svc-dash"> &ndash; </span>
+            <span class="svc-desc-inline" data-i18n="svc4_desc">expert legal assistance for matters relating to development authorities, municipal corporations, property approvals, regulatory compliance, and civic disputes.</span>
+          </p>
+          <ul class="svc-sub">
+            <li data-i18n="svc_dev_auth">Development Authority Matters (GDA, DDA, Noida Authority, etc.)</li>
+            <li data-i18n="svc_municipal">Municipal Corporation Matters</li>
+            <li data-i18n="svc_bldg_plan">Building Plan Approvals</li>
+            <li data-i18n="svc_prop_mutation">Property Mutation</li>
+            <li data-i18n="svc_prop_tax">Property Tax Matters</li>
+          </ul>
+        </li>
+
+        <li class="svc-text-item reveal">
+          <p class="svc-text-heading">
+            <span class="svc-num">5.</span>
+            <span class="svc-title-bold" data-i18n="svc5_title">Criminal Law Services</span>
+            <span class="svc-dash"> &ndash; </span>
+            <span class="svc-desc-inline" data-i18n="svc5_desc">We provide comprehensive legal representation and advisory services across a wide range of criminal matters, ensuring the protection of our clients' rights at every stage of the legal process.</span>
+          </p>
+          <ul class="svc-sub">
+            <li data-i18n="svc_bail">Bail &amp; Anticipatory Bail</li>
+            <li data-i18n="svc_fir">FIR &amp; Criminal Complaints</li>
+            <li data-i18n="svc_dowry">Dowry &amp; Domestic Violence</li>
+            <li data-i18n="svc_assault">Assault &amp; Criminal Offences</li>
+            <li data-i18n="svc_theft">Theft, Robbery &amp; Fraud</li>
+            <li data-i18n="svc_cheating">Cheating &amp; Defamation</li>
+            <li data-i18n="svc_ndps">NDPS &amp; Narcotics Cases</li>
+            <li data-i18n="svc_murder">Murder &amp; Attempt to Murder</li>
+            <li data-i18n="svc_summons">Summons &amp; Warrants</li>
+            <li data-i18n="svc_criminal_appeal">Criminal Appeals</li>
+          </ul>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-banner-inner">
+      <div class="cta-banner-text">
+        <h2 data-i18n="cta_heading">Don't Hesitate To Ask</h2>
+        <p data-i18n="cta_line1">Are You Facing Any Legal Problem But Can't Consult to Anyone?</p>
+        <p data-i18n="cta_line2">Getting the right legal advice is important because it helps you know your rights and gives you a better chance of a positive outcome.</p>
+        <p data-i18n="cta_line3">Then Consult Us...</p>
+      </div>
+      <a href="tel:+919810115840" class="cta-call-btn" data-i18n="cta_btn">Call Now</a>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="Bhardwaj Associates Logo" class="logo-img" />
+          <span class="logo-text">Bhardwaj<span class="logo-sub">Associates.</span></span>
+        </a>
+        <p class="footer-desc" data-i18n="footer_desc">Adv. Arun Sharma provides expert legal consultation for property documents, criminal matters, and civil cases in Ghaziabad.</p>
+        <div class="footer-social">
+          <a href="about.html" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="about.html" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="about.html" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="about.html" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-info-col">
+        <h4 class="footer-col-title" data-i18n="footer_address_title">Address</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fas fa-map-marker-alt"></i><span>Chamber No. 77, Tehsil Compound, Ghaziabad (U.P)</span></li>
+          <li><i class="fas fa-phone"></i><a href="tel:+919810115840">+91 9810115840</a></li>
+          <li><i class="fas fa-envelope"></i><a href="mailto:aruneshwarsharma@gmail.com">aruneshwarsharma@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="footer-col-title" data-i18n="footer_quicklinks_title">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html" data-i18n="footer_nav_home">Home</a></li>
+          <li><a href="about.html" data-i18n="footer_nav_about">About Us</a></li>
+          <li><a href="services.html" data-i18n="footer_nav_services">Our Services</a></li>
+          <li><a href="index.html#contact" data-i18n="footer_nav_contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer_copy">© 2026 Bhardwaj Associates. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Contact -->
+  <div class="floating-contact">
+    <a href="tel:+919810115840" class="float-btn float-phone" aria-label="Call us">
+      <img src="images/phone-symbol.png" alt="Call" />
+    </a>
+    <a href="https://wa.me/919810115840?text=Hi%2C%20I%20see%20your%20contact%20details%20at%20your%20website"
+       class="float-btn float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <img src="images/whatsapp-symbol.png" alt="WhatsApp" />
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/security.js" defer></script>
+</body>
+</html>

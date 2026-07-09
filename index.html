@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="site_title">Bhardwaj Associates</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Security headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <meta name="robots" content="index, follow" />
+</head>
+<body>
+  <!-- Homepage background watermark -->
+  <div class="bg-watermark" aria-hidden="true"></div>
+
+  <!-- ─── Navigation ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+          <img src="images/logo.png" alt="Bhardwaj Associates Logo" class="logo-img" />
+          <span class="logo-text">Bhardwaj<span class="logo-sub">Associates.</span></span>
+        </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-i18n="nav_home">होम</a></li>
+        <li><a href="about.html" data-i18n="nav_about">परिचय</a></li>
+        <li class="nav-dropdown">
+          <a href="#services" class="dropdown-toggle"><span data-i18n="nav_services">सेवाएं</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html" data-i18n="dd_sale_deed">Sale Deed (Registry)</a></li>
+            <li><a href="services.html" data-i18n="dd_gpa">Power of Attorney (GPA)</a></li>
+            <li><a href="services.html" data-i18n="dd_wills">Wills (Wasiyatnama)</a></li>
+            <li><a href="services.html" data-i18n="dd_rent">Rent Agreement</a></li>
+            <li><a href="services.html" data-i18n="dd_court_marriage">Court Marriage</a></li>
+            <li><a href="services.html" data-i18n="dd_agree_sale">Agreement of Sale</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" data-i18n="nav_contact">संपर्क</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="hi">हिंदी</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en">English</button>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon theme-icon-dark"><i class="fas fa-moon"></i></span>
+          <span class="theme-icon theme-icon-light"><i class="fas fa-sun"></i></span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ─── -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-profile reveal">
+          <h2 class="profile-name" data-i18n="profile_name">Advocate Arun Sharma</h2>
+          <p class="profile-advocate" data-i18n="profile_alias">(Aruneshwar Sharma)</p>
+          <p class="profile-credentials" data-i18n="profile_credentials">M.Com, LL.M.</p>
+          <p style="color:var(--text-primary);font-size:.95rem;font-weight:500;margin-bottom:6px;" data-i18n="profile_chamber">Chamber No. 77, Tehsil Compound, Ghaziabad (U.P)</p>
+          <p style="color:var(--text-primary);font-size:.95rem;font-weight:500;margin-bottom:16px;">Mob.- +91 9810115840</p>
+          <ul class="profile-services">
+            <li data-i18n="profile_svc1">All Legal Documents Advisor and Writer</li>
+            <li data-i18n="profile_svc2">Civil and Criminal Legal Advisor</li>
+          </ul>
+        </div>
+        <div class="hero-cta reveal">
+          <a href="about.html" class="btn btn-primary" data-i18n="hero_cta1">और जानें</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero_cta2">संपर्क करें</a>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <div class="image-frame">
+          <img src="images/aruneshwar.jpeg" alt="Arun Sharma" />
+          <div class="experience-badge">
+            <span class="exp-num">25+</span>
+            <span class="exp-text" data-i18n="exp_text">वर्षों का अनुभव</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#services" class="scroll-down" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ─── Services ─── -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title"><span data-i18n="services_title1">Our</span> <span class="gradient-text" data-i18n="services_title2">Services</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-file-contract"></i></div>
+          <h3 data-i18n="svc1_title">संपत्ति पंजीकरण एवं दस्तावेज़ीकरण</h3>
+          <p data-i18n="svc1_desc">संपत्ति से संबंधित सभी दस्तावेज़ों के मसौदे, सत्यापन, पंजीकरण और निष्पादन में कानूनी सहायता। जैसे – विक्रय पत्र, उपहार पत्र, GPA, वसीयतनामा।</p>
+          <p class="svc-inc" data-i18n="svc1_inc">जैसे – विक्रय पत्र, उपहार पत्र, सामान्य मुख्तारनामा (GPA), वसीयतनामा</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-file-signature"></i></div>
+          <h3 data-i18n="svc2_title">कानूनी अनुबंध एवं दस्तावेज़ीकरण</h3>
+          <p data-i18n="svc2_desc">आपके अधिकारों की रक्षा के लिए अनुबंधों और कानूनी दस्तावेज़ों का मसौदा तैयार करना। जैसे – बैनामा, किराया अनुबंध, शपथपत्र, विवाह पंजीकरण।</p>
+          <p class="svc-inc" data-i18n="svc2_inc">जैसे – बैनामा, किराया अनुबंध, शपथपत्र, विवाह पंजीकरण</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-certificate"></i></div>
+          <h3 data-i18n="svc3_title">सरकारी प्रमाण पत्र एवं दस्तावेज़ीकरण</h3>
+          <p data-i18n="svc3_desc">सरकारी प्रमाण पत्र प्राप्त करने और नियामक अनुपालन सुनिश्चित करने में पेशेवर कानूनी सहायता। जैसे – आय, EWS, अधिवास, कानूनी उत्तराधिकारी प्रमाण पत्र।</p>
+          <p class="svc-inc" data-i18n="svc3_inc">जैसे – आय प्रमाण पत्र, EWS प्रमाण पत्र, अधिवास प्रमाण पत्र, कानूनी उत्तराधिकारी प्रमाण पत्र</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-city"></i></div>
+          <h3 data-i18n="svc4_title">विकास प्राधिकरण एवं नगरपालिका मामले</h3>
+          <p data-i18n="svc4_desc">विकास प्राधिकरण, नगर निगम, संपत्ति अनुमोदन, नियामक अनुपालन और नागरिक विवादों से संबंधित मामलों में विशेषज्ञ कानूनी सहायता।</p>
+          <p class="svc-inc" data-i18n="svc4_inc">जैसे – विकास प्राधिकरण मामले (GDA, नोएडा प्राधिकरण, MDA आदि), नगर निगम मामले</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-gavel"></i></div>
+          <h3 data-i18n="svc5_title">आपराधिक कानून सेवाएं</h3>
+          <p data-i18n="svc5_desc">आपराधिक मामलों में हर कदम पर आपके अधिकारों की रक्षा करते हुए व्यापक कानूनी प्रतिनिधित्व। जैसे – जमानत, अग्रिम जमानत, FIR, दहेज एवं घरेलू हिंसा।</p>
+          <p class="svc-inc" data-i18n="svc5_inc">जैसे – जमानत एवं अग्रिम जमानत, FIR एवं आपराधिक शिकायत, दहेज एवं घरेलू हिंसा</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-plus-circle"></i></div>
+          <h3 data-i18n="svc6_title">अन्य सेवाएं</h3>
+          <p data-i18n="svc6_desc">हम अतिरिक्त कानूनी सेवाओं की एक विस्तृत श्रृंखला प्रदान करते हैं। अधिक जानकारी के लिए हमसे संपर्क करें।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title"><span data-i18n="contact_title1">संपर्क में</span> <span class="gradient-text" data-i18n="contact_title2">आएं</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong data-i18n="contact_location_label">स्थान</strong>
+                <span>Chamber No. 77, Tehsil Compound, Ghaziabad (U.P)</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong data-i18n="contact_email_label">ईमेल</strong>
+                <span>aruneshwarsharma@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <strong data-i18n="contact_phone_label">फोन</strong>
+                <span>+91 9810115840</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="आपका पूरा नाम" data-i18n-ph="form_name_ph" required />
+            <label for="name" data-i18n="form_name_label">आपका नाम<span class="req-star">*</span></label>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="mobile" name="mobile" placeholder="मोबाइल नंबर" data-i18n-ph="form_email_ph" required pattern="[0-9]{10}" maxlength="10" />
+            <label for="email" data-i18n="form_email_label">मोबाइल नंबर<span class="req-star">*</span></label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="अपनी कानूनी समस्या बताएं" data-i18n-ph="form_msg_ph" required></textarea>
+            <label for="message" data-i18n="form_msg_label">आपका संदेश<span class="req-star">*</span></label>
+          </div>
+          <!-- honeypot: invisible to humans, bots fill it -->
+          <input type="text" name="website" id="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
+          <button type="submit" class="btn btn-primary btn-full">
+            <span data-i18n="form_submit">संदेश भेजें</span> <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA Banner ─── -->
+  <section class="cta-banner">
+    <div class="cta-banner-inner">
+      <div class="cta-banner-text">
+        <h2 data-i18n="cta_heading">Don't Hesitate To Ask</h2>
+        <p data-i18n="cta_line1">Are You Facing Any Legal Problem But Can't Consult to Anyone?</p>
+        <p data-i18n="cta_line2">Getting the right legal advice is important because it helps you know your rights and gives you a better chance of a positive outcome.</p>
+        <p data-i18n="cta_line3">Then Consult Us...</p>
+      </div>
+      <a href="tel:+919810115840" class="cta-call-btn" data-i18n="cta_btn">Call Now</a>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">
+          <img src="images/logo.png" alt="Bhardwaj Associates Logo" class="logo-img" />
+          <span class="logo-text">Bhardwaj<span class="logo-sub">Associates.</span></span>
+        </a>
+        <p class="footer-desc" data-i18n="footer_desc">Adv. Arun Sharma provides expert legal consultation for property documents, criminal matters, and civil cases in Ghaziabad.</p>
+        <div class="footer-social">
+          <a href="about.html" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="about.html" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="about.html" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="about.html" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-info-col">
+        <h4 class="footer-col-title" data-i18n="footer_address_title">Address</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fas fa-map-marker-alt"></i><span>Chamber No. 77, Tehsil Compound, Ghaziabad (U.P)</span></li>
+          <li><i class="fas fa-phone"></i><a href="tel:+919810115840">+91 9810115840</a></li>
+          <li><i class="fas fa-envelope"></i><a href="mailto:aruneshwarsharma@gmail.com">aruneshwarsharma@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="footer-col-title" data-i18n="footer_quicklinks_title">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="#home" data-i18n="footer_nav_home">Home</a></li>
+          <li><a href="about.html" data-i18n="footer_nav_about">About Us</a></li>
+          <li><a href="services.html" data-i18n="footer_nav_services">Our Services</a></li>
+          <li><a href="#contact" data-i18n="footer_nav_contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer_copy">© 2026 Bhardwaj Associates. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ─── Lightbox ─── -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <img src="" alt="Expanded view" id="lightboxImg" />
+  </div>
+
+  <!-- ─── Floating Contact Buttons ─── -->
+  <div class="floating-contact">
+    <a href="tel:+919810115840" class="float-btn float-phone" aria-label="Call us">
+      <img src="images/phone-symbol.png" alt="Phone" />
+    </a>
+    <a href="https://wa.me/919810115840?text=Hi%2C%20I%20see%20your%20contact%20details%20at%20your%20website" class="float-btn float-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us">
+      <img src="images/whatsapp-symbol.png" alt="WhatsApp" />
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/security.js" defer></script>
+</body>
+</html>

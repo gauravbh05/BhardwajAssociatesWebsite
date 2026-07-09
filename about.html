@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="about_page_title">Bhardwaj Associates – About</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Security headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <meta name="robots" content="index, follow" />
+</head>
+<body id="top">
+
+  <!-- ─── Navigation ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Bhardwaj Associates Logo" class="logo-img" />
+        <span class="logo-text">Bhardwaj<span class="logo-sub">Associates.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-i18n="nav_home">होम</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav_about">परिचय</a></li>
+        <li class="nav-dropdown">
+          <a href="services.html" class="dropdown-toggle"><span data-i18n="nav_services">सेवाएं</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html" data-i18n="dd_sale_deed">Sale Deed (Registry)</a></li>
+            <li><a href="services.html" data-i18n="dd_gpa">Power of Attorney (GPA)</a></li>
+            <li><a href="services.html" data-i18n="dd_wills">Wills (Wasiyatnama)</a></li>
+            <li><a href="services.html" data-i18n="dd_rent">Rent Agreement</a></li>
+            <li><a href="services.html" data-i18n="dd_court_marriage">Court Marriage</a></li>
+            <li><a href="services.html" data-i18n="dd_agree_sale">Agreement of Sale</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact" data-i18n="nav_contact">संपर्क</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="hi">हिंदी</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en">English</button>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon theme-icon-dark"><i class="fas fa-moon"></i></span>
+          <span class="theme-icon theme-icon-light"><i class="fas fa-sun"></i></span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── About ─── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:48px;">
+        <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--text-primary);display:inline-block;border-bottom:2px solid var(--accent-1);padding-bottom:6px;letter-spacing:.04em;"><span data-i18n="about_us_title">About</span> <span class="gradient-text" data-i18n="about_us_title2">Us</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal" style="display:flex; justify-content:center; align-self:flex-start;">
+          <div class="image-frame" style="width:400px; margin-left:30px;">
+            <img src="images/aruneshwar.jpeg" alt="Arun Sharma"
+                 style="height:540px; object-fit:cover; object-position:top center;"
+                 onerror="this.src='https://placehold.co/400x540/111B2E/C9960A?text=Arun+Sharma'" />
+            <div class="experience-badge">
+              <span class="exp-num">25+</span>
+              <span class="exp-text" data-i18n="exp_text">वर्षों का अनुभव</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <div style="margin-bottom:24px;">
+            <h2 class="profile-name" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:6px;" data-i18n="profile_name">
+              Advocate Arun Sharma
+            </h2>
+            <p class="profile-advocate" data-i18n="profile_alias">(Aruneshwar Sharma)</p>
+            <p class="profile-credentials" style="margin-bottom:0;" data-i18n="profile_credentials">M.Com, LL.M.</p>
+            <p style="color:var(--text-primary);font-size:.95rem;font-weight:500;margin-top:6px;" data-i18n="profile_chamber">Chamber No. 77, Tehsil Compound, Ghaziabad (U.P)</p>
+            <p style="color:var(--text-primary);font-size:.95rem;font-weight:500;margin-top:4px;">Mob.- +91 9810115840</p>
+          </div>
+          <p class="about-bio" data-i18n="about_bio">Advocate Arun Sharma is a highly respected legal professional and a well-recognized name among the senior advocates practicing in the Ghaziabad Tehsil Compound. With over 25 years of independent legal practice, he has built a strong reputation for providing reliable legal advice, strategic representation, and ethical advocacy. His expertise spans civil and criminal matters, legal documentation, and consultancy services. Committed to professionalism, integrity, and achieving the best possible outcomes for his clients, Advocate Arun Sharma continues to serve individuals and businesses with dedication and excellence.</p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-value" style="font-size:1.6rem;">UP/12576/10</span>
+              <span class="stat-label" data-i18n="stat_projects">Enrollment No.</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">1500+</span>
+              <span class="stat-label" data-i18n="stat_clients">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services 3-column list — full container width -->
+      <div class="about-services-grid" style="margin-top:40px;">
+        <ul class="about-services-col">
+          <li data-i18n="svc_sale_deed">Sale Deed (Registry)</li>
+          <li data-i18n="svc_gift_deed">Gift of Property (Gift Deed)</li>
+          <li data-i18n="svc_cancel_deed">Cancellation Deed</li>
+          <li data-i18n="svc_lease_deed">Lease Deed</li>
+          <li data-i18n="svc_gpa">General Power of Attorney (GPA)</li>
+          <li data-i18n="svc_rent">Rent Agreement</li>
+        </ul>
+        <ul class="about-services-col">
+          <li data-i18n="svc_agree_sell">Agreements to Sell (बयाना)</li>
+          <li data-i18n="svc_wills">Wills (वसीयतनामा)</li>
+          <li data-i18n="svc_heirs">Legal Heirs (वारिसान)</li>
+          <li data-i18n="svc_marriage">Marriage Registration (Court Marriage)</li>
+          <li data-i18n="svc_affidavit">Affidavits</li>
+          <li data-i18n="svc_income">Income Certificate</li>
+        </ul>
+        <ul class="about-services-col">
+          <li data-i18n="svc_ews">EWS Certificates</li>
+          <li data-i18n="svc_domicile">Domicile</li>
+          <li data-i18n="svc_stamp">Stamp Duty</li>
+          <li data-i18n="svc_property_disp">Property Disputes &amp; Partition</li>
+          <li data-i18n="svc_municipal">Municipal Corporation Matters</li>
+          <li data-i18n="svc_devauth">Development Authority Matters</li>
+        </ul>
+      </div>
+
+      <p class="about-bio" style="margin-top:32px;margin-bottom:0;" data-i18n="about_extra">Beyond legal documentation, Advocate Arun Sharma provides comprehensive legal consultation, dispute resolution, and courtroom representation across civil, criminal, matrimonial, property, financial, commercial, labour, and constitutional matters. He is also highly experienced in drafting and executing legal documents such as Partition Deeds, Exchange Deeds, Mortgage Deeds, Leasehold Mortgage Deeds, Leave &amp; License Agreements, Sub-Lease Deeds, Special Power of Attorney (SPA), Builder-Buyer Agreements (BBA), Agreements to Sell, and Wills, ensuring legally sound, transparent, and client-focused solutions.</p>
+
+    </div>
+  </section>
+
+  <!-- ─── CTA Banner ─── -->
+  <section class="cta-banner">
+    <div class="cta-banner-inner">
+      <div class="cta-banner-text">
+        <h2 data-i18n="cta_heading">Don't Hesitate To Ask</h2>
+        <p data-i18n="cta_line1">Are You Facing Any Legal Problem But Can't Consult to Anyone?</p>
+        <p data-i18n="cta_line2">Getting the right legal advice is important because it helps you know your rights and gives you a better chance of a positive outcome.</p>
+        <p data-i18n="cta_line3">Then Consult Us...</p>
+      </div>
+      <a href="tel:+919810115840" class="cta-call-btn" data-i18n="cta_btn">Call Now</a>
+    </div>
+  </section>
+
+  <!-- ─── Our Team ─── -->
+  <section class="section" style="padding-top:40px; padding-bottom:60px;">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:48px;">
+        <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--text-primary);display:inline-block;border-bottom:2px solid var(--accent-1);padding-bottom:6px;letter-spacing:.04em;"><span data-i18n="team_title">Our</span> <span class="gradient-text" data-i18n="team_title2">Team</span></h2>
+      </div>
+      <div class="team-grid reveal">
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="images/aruneshwar.jpeg" alt="Advocate Arun Sharma" />
+          </div>
+          <a href="#top" class="team-name">Advocate Arun Sharma</a>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="images/gaurav.jpeg" alt="Advocate Gaurav" />
+          </div>
+          <a href="#top" class="team-name">Advocate Gaurav Bhardwaj</a>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="images/KartikSharmaImage.jpg" alt="Advocate Kartik Sharma" />
+          </div>
+          <a href="#top" class="team-name">Advocate Kartik Sharma</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="Bhardwaj Associates Logo" class="logo-img" />
+          <span class="logo-text">Bhardwaj<span class="logo-sub">Associates.</span></span>
+        </a>
+        <p class="footer-desc" data-i18n="footer_desc">Adv. Arun Sharma provides expert legal consultation for property documents, criminal matters, and civil cases in Ghaziabad.</p>
+        <div class="footer-social">
+          <a href="about.html" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="about.html" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="about.html" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="about.html" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-info-col">
+        <h4 class="footer-col-title" data-i18n="footer_address_title">Address</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fas fa-map-marker-alt"></i><span>Chamber No. 77, Tehsil Compound, Ghaziabad (U.P)</span></li>
+          <li><i class="fas fa-phone"></i><a href="tel:+919810115840">+91 9810115840</a></li>
+          <li><i class="fas fa-envelope"></i><a href="mailto:aruneshwarsharma@gmail.com">aruneshwarsharma@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="footer-col-title" data-i18n="footer_quicklinks_title">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html" data-i18n="footer_nav_home">Home</a></li>
+          <li><a href="about.html" data-i18n="footer_nav_about">About Us</a></li>
+          <li><a href="services.html" data-i18n="footer_nav_services">Our Services</a></li>
+          <li><a href="index.html#contact" data-i18n="footer_nav_contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer_copy">© 2026 Bhardwaj Associates. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ─── Floating Contact Buttons ─── -->
+  <div class="floating-contact">
+    <a href="tel:+919810115840" class="float-btn float-phone" aria-label="Call us">
+      <img src="images/phone-symbol.png" alt="Phone" />
+    </a>
+    <a href="https://wa.me/919810115840?text=Hi%2C%20I%20see%20your%20contact%20details%20at%20your%20website" class="float-btn float-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us">
+      <img src="images/whatsapp-symbol.png" alt="WhatsApp" />
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/security.js" defer></script>
+</body>
+</html>
