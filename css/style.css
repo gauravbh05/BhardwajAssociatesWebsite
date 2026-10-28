@@ -408,6 +408,12 @@ body {
   padding: 120px 24px 60px;
 }
 
+.advocate-section {
+  padding: 80px 24px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-dark);
+}
+
 .hero-bg-shapes { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .shape {
   position: absolute;
